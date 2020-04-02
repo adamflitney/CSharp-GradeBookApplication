@@ -26,19 +26,19 @@ namespace GradeBook.GradeBooks
             sortedAverageGrades.Reverse();
 
 
-            if(averageGrade >= sortedAverageGrades[gradeThreshold])
+            if(averageGrade >= sortedAverageGrades[gradeThreshold - 1])
             {
                 return 'A';
             }
-            else if(averageGrade >= sortedAverageGrades[gradeThreshold*2])
+            else if(averageGrade >= sortedAverageGrades[gradeThreshold*2 - 1])
             {
                 return 'B';
             }
-            else if (averageGrade >= sortedAverageGrades[gradeThreshold * 3])
+            else if (averageGrade >= sortedAverageGrades[gradeThreshold * 3 - 1])
             {
                 return 'C';
             }
-            else if (averageGrade >= sortedAverageGrades[gradeThreshold * 4])
+            else if (averageGrade >= sortedAverageGrades[gradeThreshold * 4 - 1])
             {
                 return 'D';
             }
